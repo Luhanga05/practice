@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function delayedMessage(message,callback1,callback2){
+            setTimeout(() => {
+                callback1(message);
+            }, 2000);
+            setTimeout(() => {
+                callback2(message);
+            }, 15000);
+        }
+        delayedMessage(" this message will appear", msg => console.log("in 2 seconds"+msg),msg => console.log("in 15 seconds"+msg));
+    </script>
+</body>
+</html>
