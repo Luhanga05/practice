@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function divide(num1,num2){
+            return num1/num2;
+        }
+        function multi(num1,num2){
+            return num1*num2;
+        }
+        function calcu(num1,num2,callback){
+            const result = callback(num1,num2);
+            console.log(result);
+        }
+        calcu(8,2,divide);
+        calcu(8,2,multi);
+    </script>
+</body>
+</html>
